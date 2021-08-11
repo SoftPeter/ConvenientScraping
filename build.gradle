@@ -1,0 +1,35 @@
+buildscript {
+    ext {
+        springBootVersion = '2.1.7.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+//    처음 생성하면 나오던 코드
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin:   'java'
+apply plugin:   'eclipse'
+apply plugin:   'org.springframework.boot'
+apply plugin:   'io.spring.dependency-management'
+
+group 'com.coocon.scraping'
+version '1.0.0-SNAPSHOT-' + new Date().format("yyyyMMddHHmmss")
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}

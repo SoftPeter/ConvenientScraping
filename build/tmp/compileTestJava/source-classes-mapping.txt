@@ -2,5 +2,9 @@ scraping/coocon/com/web/HelloControllerTest.java
  scraping.coocon.com.web.HelloControllerTest
 scraping/coocon/com/web/domain/posts/PostsRepositoryTest.java
  scraping.coocon.com.web.domain.posts.PostsRepositoryTest
+scraping/coocon/com/web/PostsApiControllerTest.java
+ scraping.coocon.com.web.PostsApiControllerTest
+scraping/coocon/com/web/IndexControllerTest.java
+ scraping.coocon.com.web.IndexControllerTest
 scraping/coocon/com/web/dto/HelloResponseDtoTest.java
  scraping.coocon.com.web.dto.HelloResponseDtoTest
